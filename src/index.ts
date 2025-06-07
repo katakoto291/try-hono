@@ -4,9 +4,6 @@ import { handle } from 'hono/aws-lambda'
 const app = new Hono()
 
 app.get('/', (c) => {
-
-  const req = c.req
-
   return c.text('Hello Hono!')
 })
 
